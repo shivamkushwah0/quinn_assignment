@@ -1,0 +1,263 @@
+.flex {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  padding-top: 0px;
+  margin-top: 0px;
+  position: relative;
+  
+  &-col {
+    flex-direction: column;
+  }
+  &-jc-center {
+    justify-content: center;
+  }
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 14.285% 14.285% 14.285% 14.285% 14.285% 14.285% 14.285%;
+  padding: 0px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  &:hover {
+    background-color: rgba(240, 240, 240, 0.8);
+  }
+  border: 0.4px solid rgba(170, 170, 170, 0.8);
+  font-size: 30px;
+  text-align: center;
+}
+
+.cal {
+  &-wrapper {
+    margin-top: 0;
+    padding-top: 0rem;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    // overflow: hidden;
+    // box-shadow: 0 2px 4px 0 rgba($color: #464646, $alpha: 0.3);
+  }
+  &-days {
+    height: 73%;
+    max-width: 600px;
+    width: 100%;
+
+    // overflow-y: scroll;
+    &-b {
+      background-color: whitesmoke;
+    }
+  }
+  &-weeks {
+    width: 100%;
+
+    padding: 2%;
+    &-box {
+      text-transform: uppercase;
+      width: 17%;
+      font-weight: 600;
+    }
+  }
+}
+
+.month-name{
+  font-size: 24px;
+  padding-bottom: 10px;
+  padding-left: 2%;
+  font-weight: 600;
+}
+.header-wrapper {
+  &-fake {
+    height: 20%;
+    width: 100%;
+    max-width: 600px;
+    width: 100%;
+  }
+  position: fixed;
+  width: 100%;
+
+  max-width: 600px;
+  margin-left: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  z-index: 5;
+  
+}
+
+.cal-month{
+  font-size: 24px;
+  text-align: right;
+  margin-right: 5%;
+  font-weight: 600;
+  color: #000000;
+}
+.cal-month span{
+  font-weight: 500;
+  margin-left: 5px;
+  color: #b1adad;
+}
+
+.upanim {
+  transform: translateY(100%);
+  transition: all 0.6s;
+}
+.downanim {
+  transform: translateY(-100%);
+  transition: all 0.6s;
+}
+
+.tile {
+  height: 8.2rem;
+  width: 100%;
+  font-size: 5px;
+  padding-bottom: 10px;
+  &-bg {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    justify-content: center;
+  
+  }
+  background-color: white;
+  &-day {
+    height: 20%;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: center;
+    font-weight: 600;
+  }
+  &-img {
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+  }
+}
+
+.mystar {
+  width: 12px;
+  font-size: 12px;
+}
+.filled {
+  color: rgb(50, 180, 240);
+}
+.unfilled {
+  color: rgb(214, 214, 214);
+}
+
+.star-rating{
+  margin-top: -8px;
+}
+
+.bubble {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-left: 3px;
+  text-align: center;
+  &-bg {
+    height: 2.0rem;
+    width: 2.0rem;
+    padding: 2%;
+  }
+  &-cu {
+    background-color: #ebafaf;
+  }
+  &-hc {
+    background-color: #ffd7a3;
+  }
+  &-pr {
+    background-color: #afebd4;
+  }
+  &-c {
+    background-color: #e6afeb;
+  }
+  &-dc{
+    background-color: rgb(248, 248, 174);
+  }
+}
+
+.xtile {
+  overflow: hidden;
+  &-img {
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+  }
+  &-container {
+    padding: 3%;
+    & > * {
+      margin-top: 3%;
+    }
+  }
+  &-desc {
+    color: grey;
+    font-size: smaller;
+    padding-bottom: 2%;
+  }
+}
+
+.modalback {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  max-width: 600px;
+  z-index: 10;
+  background-color: rgba(88, 88, 88, 0.844);
+}
+
+.close-btn {
+  position: absolute;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 5px;
+  top: 3%;
+  right: 3%;
+  z-index: 5;
+}
+.today{
+  background-color: rgb(236, 69, 69);
+  color: white;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 2px;
+
+}
+
+.carousel-inner{
+  background-color: blue;
+  height: 100%;
+  border-radius: 8px;
+}
+.carousel-item{
+  height: 100%;
+  background-color: blueviolet;
+}
+.xtile-desc {
+  font-size: 20px;
+}
